@@ -1,0 +1,10 @@
+<div class="content" role="main">
+    <h2>Products</h2>
+        <ul>
+           <li *ngFor="let transactionId of transactionIds; let i = index">
+    
+                <p>Transaction id: {{transactionId}} Product id: {{productIds[i]}} Product price: {{productPrices[i]}} Transaction date: {{dates[i]}}</p>
+            </li>
+        </ul>
+        <button [routerLink]="['/welcome']">Back</button>
+    </div>

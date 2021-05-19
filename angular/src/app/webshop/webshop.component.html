@@ -1,0 +1,11 @@
+<div class="content" role="main">
+<h2>Products</h2>
+    <ul>
+        <li *ngFor="let item of items; let i = index">
+
+            <p>{{item}} : {{prices[i]}} Ft </p><p>In Stock: {{quantities[i]}} </p><button *ngIf="quantities[i] > 0" (click)="purchase(item, ids[i], prices[i])">Buy</button><button *ngIf="quantities[i] == 0">Out of stock!</button>
+
+        </li>
+    </ul>
+    <button [routerLink]="['/welcome']" style="width : 25%">Back</button>
+</div>

@@ -1,0 +1,16 @@
+<div class="content" role="main">
+  <div class="card highlight-card card-small">
+    Please log in!
+</div>
+<div class="card highlight-card card-small">
+    <label>Username</label>
+    <input type="text" id="username" [(ngModel)] = "username">
+</div>
+<div class="card highlight-card card-small">
+    <label>Password</label>
+    <input type="password" id="password" [(ngModel)] = "password">
+</div>
+<button (click)="login()">Log in</button>
+<button [routerLink]="['/register']">Register</button><br>
+  
+</div>

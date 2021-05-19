@@ -1,0 +1,21 @@
+button {
+    text-decoration: none;
+    color: #000;
+    width: 300px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 3%;
+    cursor: pointer;
+   
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+   
+button:hover {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background: #1976d2;
+}

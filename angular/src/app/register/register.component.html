@@ -1,0 +1,20 @@
+<div class="content" role="main">
+    <div class="card highlight-card card-small">
+        Register
+    </div>
+    <div class="card highlight-card card-small">
+        <label>Email</label>
+        <input type="text" [(ngModel)]="email">
+    </div>
+    <div class="card highlight-card card-small">
+        <label>Username</label>
+        <input type="text" [(ngModel)]="username">
+    </div>
+    <div class="card highlight-card card-small">
+        <label>Password</label>
+        <input type="password" [(ngModel)]="password">
+    </div>
+    <button (click)="register()">Register</button>
+    <button [routerLink]="['/login']">Back</button><br>
+
+</div>

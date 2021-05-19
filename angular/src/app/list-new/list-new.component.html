@@ -1,0 +1,26 @@
+<div class="content" role="main">
+    <div class="card highlight-card card-small">
+        <h2>
+            List new items
+        </h2>
+    </div>
+    <div class="card highlight-card card-small">
+        <label>Product id</label>
+        <input type="number" [(ngModel)]="id">
+    </div>
+    <div class="card highlight-card card-small">
+        <label>Product name</label>
+        <input type="text" [(ngModel)]="name" min="0">
+    </div>
+    <div class="card highlight-card card-small">
+        <label>Proudct price</label>
+        <input type="number" [(ngModel)]="price" min="0">
+    </div>
+    <div class="card highlight-card card-small">
+        <label>Quantity</label>
+        <input type="number" [(ngModel)]="qunatity" min="0">
+    </div>
+    <button (click)="listNewItem()">List item</button>
+    <button [routerLink]="['/welcome']">Back</button>
+
+</div>
