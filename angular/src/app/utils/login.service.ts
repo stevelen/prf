@@ -26,4 +26,8 @@ export class LoginService {
     responseType: 'text', observe: 'response' as 'response'});
   }
 
+  pingServer(){
+    return this.http.get(environment.springUrl + '/', {responseType: 'text'});
+  }
+
 }

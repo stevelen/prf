@@ -37,9 +37,13 @@ export class LoginComponent implements OnInit {
         console.log(msg);
       }, error => {
         console.log(error);
-        alert(error.error);
       })
     }
+    this.loginService.pingServer().subscribe(msg => {
+      console.log(msg);
+    }, error => {
+      console.log(error);
+    })
   }
 
 }
